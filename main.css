@@ -45,6 +45,7 @@ body {
     align-items: center;
     transition: .3s;
     width: 120px;
+    height: 40px;
 }
 .add-info button:hover {
     background-color: #01a537;
