@@ -4,39 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Médias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container">
-        <div class="title">
-            <img src="" alt="">
+        <header class="title">
+            <img src="assets/logo.png" alt="Chapéu de formatura com diploma ao lado" height="35px">
             <h1>Calculadora de Médias</h1>
-        </div>
-        <div class="add-info">
-            <input type="text" name="atividade" id="atividade" class="atividade">
-            <input type="number" name="nota" id="nota" class="nota">
-            <button type="submit">
-                Adicionar +
-            </button>
-        </div>
-        <table>
+        </header>
+        <form class="add-info" id="form">
+            <input 
+                type="text" 
+                name="atividade" 
+                id="atividade" 
+                class="add-atividade" 
+                placeholder="Nome da Atividade"
+                required
+            >
+            <input 
+                type="number" 
+                name="nota" 
+                id="nota" 
+                class="add-nota" 
+                placeholder="Nota"
+                min="0"
+                max="10"
+                required
+            >
+            <button type="submit"><span>Adicionar +</span></button>
+        </form>
+        <table cellspacing="0">
             <thead>
                 <th>Nome da Atividade</th>
                 <th>Nota</th>
                 <th>Aprovado?</th>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Português</td>
-                    <td>8</td>
-                    <td>sim</td>
-                </tr>
-            </tbody>
+            <tbody></tbody>
             <tfoot>
                 <tr>
-                    <td>Nota Média</td>
-                    <td>10</td>
-                    <td>Reprovado</td>
+                    <td class="align-left">Média Final</td>
+                    <td id="media_final_valor">----</td>
+                    <td id="media_final_resultado">----</td>
                 </tr>
             </tfoot>
         </table>

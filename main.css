@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #E7E7E7;
+}
+.container {
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title {
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.add-info {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding-bottom: 2em;
+}
+.add-info input, .add-info button {
+    height: 30px;
+    border: none;
+    border-radius: none;
+    font-size: 1em;
+}
+.add-info button {
+    background-color: #009432;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.add-info button:hover {
+    background-color: #01a537;
+}
+.add-info input {
+    padding: .5em;
+    border-bottom: 2px solid black;
+}
+.add-info input:focus {
+    outline: .1px solid rgb(0, 0, 0);
+}
+.add-nota {
+    width: 80px;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+    padding-left: 4em;
+}
+table th {
+    border-bottom: 2px solid black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+table td {
+    padding: .8em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+}
+.aprovado {
+    background-color: #009432;
+}
+.reprovado {
+    background-color: red;
+}
