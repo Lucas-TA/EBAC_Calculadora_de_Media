@@ -89,6 +89,9 @@ table td {
     background-color: red;
 }
 @media screen and (max-width: 750px) {
+    .container {
+        width: 90%;
+    }
     .add-info {
         display: flex;
         flex-direction: column;
