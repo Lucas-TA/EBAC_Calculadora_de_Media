@@ -101,4 +101,7 @@ table td {
     .add-info input, button {
         width: 100%;
     }
+    .align-left {
+        padding: 0;
+    }
 }
