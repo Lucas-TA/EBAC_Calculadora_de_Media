@@ -45,7 +45,6 @@ body {
     align-items: center;
     transition: .3s;
     width: 120px;
-    height: 40px;
 }
 .add-info button:hover {
     background-color: #01a537;
@@ -88,4 +87,15 @@ table td {
 }
 .reprovado {
     background-color: red;
+}
+@media screen and (max-width: 750px) {
+    .add-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .add-info input, button {
+        width: 100%;
+    }
 }
